@@ -1,0 +1,7 @@
+def remove_nth_character(string, n):
+    if n < 0 or n >= len(string):
+        return "Invalid index"
+    else:
+        return string[:n] + string[n+1:]
+my_string = "Hello, World!"
+print(remove_nth_character(my_string, 7)) 
