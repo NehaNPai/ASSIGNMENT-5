@@ -1,0 +1,9 @@
+def replace_not_poor(string):
+    not_index = string.find('not')
+    poor_index = string.find('poor')
+    if not_index != -1 and poor_index != -1 and not_index > poor_index:
+        return string[:poor_index] + 'good' + string[not_index+3:]
+    else:
+        return string
+print(replace_not_poor('The lyrics is not that poor!'))
+print(replace_not_poor('The lyrics is poor!'))  
