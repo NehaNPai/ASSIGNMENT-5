@@ -1,0 +1,10 @@
+def get_string(s):
+    if len(s) < 2:
+        return ""
+    else:
+        return s[:2] + s[-2:]
+
+# example usage
+print(get_string('thisisniceone'))  # output: 'thne'
+print(get_string('ab'))  # output: 'abab'
+print(get_string('f'))  # output: ''
