@@ -1,0 +1,7 @@
+def replace_first_char(string):
+    first_char = string[0]
+    replaced_string = first_char + string[1:].replace(first_char, '$')
+    return replaced_string
+print(replace_first_char('restart')) 
+print(replace_first_char('apple'))  
+print(replace_first_char('banana'))  
