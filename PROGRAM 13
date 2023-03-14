@@ -1,0 +1,9 @@
+string = "Hello, world!"
+if string.startswith("Hello"):
+    print("String starts with 'Hello'")
+else:
+    print("String does not start with 'Hello'")
+if string.startswith("Hi"):
+    print("String starts with 'Hi'")
+else:
+    print("String does not start with 'Hi'")
